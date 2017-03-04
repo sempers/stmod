@@ -1,0 +1,158 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 360
+@tier1cost2 = 480
+@tier1cost3 = 600
+@tier1cost4 = 720
+
+@tier2cost1 = 1000
+@tier2cost2 = 1400
+@tier2cost3 = 1800
+@tier2cost4 = 2200
+
+@tier3cost1 = 3000
+@tier3cost2 = 4000
+@tier3cost3 = 5000
+@tier3cost4 = 6000
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+@tier1weight4 = 85
+
+@tier2weight1 = 75
+@tier2weight2 = 70
+@tier2weight3 = 65
+@tier2weight4 = 60
+
+@tier3weight1 = 50
+@tier3weight2 = 45
+@tier3weight3 = 40
+@tier3weight4 = 35
+
+tech_titan = {
+	cost = 7000
+	area = engineering
+	tier = 3
+	category = { voidcraft }	
+	prerequisites = { "tech_spaceport_6" "tech_doctrine_fleet_size_5" }
+	weight = @tier3weight2
+	is_rare = yes
+		
+	## unlock titans	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_TITAN_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_TITAN_CONSTRUCTION_DESC"
+		}
+	}
+	
+	feature_flags = { }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 70 }
+		}	
+		modifier = {
+			factor = 4
+			any_neighbor_country = {
+				has_technology = tech_titan
+			}
+		}
+		modifier = {
+			factor = 4
+			years_passed > 90
+		}
+		modifier = {
+			factor = 6
+			years_passed > 100
+		}
+		modifier = {
+			factor = 8
+			years_passed > 110
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 100 #higher factor due to battleship hull
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_titan_laser = {
+	cost = 7000
+	area = physics
+	tier = 3
+	category = { particles }	
+	prerequisites = { "tech_titan" "tech_energy_lance_2" }
+	ai_update_type = military
+	weight = @tier3weight2
+	is_rare = yes
+		
+	## unlock titan laser	
+		
+	feature_flags = { }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 70 }
+		}	
+		modifier = {
+			factor = 4
+			has_technology = tech_titan
+			
+		}
+		modifier = {
+			factor = 4
+			years_passed > 90
+		}
+		modifier = {
+			factor = 6
+			years_passed > 100
+		}
+		modifier = {
+			factor = 8
+			years_passed > 110
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 100 #higher factor due to battleship hull
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}

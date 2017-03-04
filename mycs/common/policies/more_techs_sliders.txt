@@ -1,0 +1,135 @@
+ship_focus = {
+	potential = {
+		has_technology = tech_fleet_focus
+	}
+
+	option = {
+		name = "quality_ship_focus"
+
+		prerequisites = {
+			"tech_imperial_reforms"
+		}
+
+		valid = {
+			OR = {
+				has_policy_flag = extreme_quality_ship_focus
+				has_policy_flag = quality_ship_focus
+				has_policy_flag = slight_quality_ship_focus
+			}
+		}
+		policy_flags = {
+			quality_ship_focus
+		}
+		modifier = {
+			navy_size_mult = -0.3
+			ship_upkeep_mult = 0.3
+			spaceport_ship_build_cost_mult = 0.25
+			planet_ship_build_speed_mult = -0.25
+			ship_fire_rate_mult = 0.2
+			ship_hitpoints_mult = 0.2
+		}
+	}	
+	option = {
+		name = "slight_quality_ship_focus"
+
+		prerequisites = {
+			"tech_fleet_focus"
+		}
+		
+		valid = {
+			OR = {
+				has_policy_flag = quality_ship_focus
+				has_policy_flag = slight_quality_ship_focus
+				has_policy_flag = balanced_ship_focus
+			}
+		}
+		policy_flags = {
+			slight_quality_ship_focus
+		}
+		modifier = {
+			navy_size_mult = -0.1
+			ship_upkeep_mult = 0.1
+			spaceport_ship_build_cost_mult = 0.1
+			planet_ship_build_speed_mult = -0.1
+			ship_fire_rate_mult = 0.1
+			ship_hitpoints_mult = 0.1
+		}
+	}
+	option = {
+		name = "balanced_ship_focus"
+		
+		valid = {
+			OR = {
+				NOT = {
+					# For the first time around
+					has_policy_flag = quality_ship_focus
+					has_policy_flag = slight_quality_ship_focus
+					has_policy_flag = balanced_ship_focus
+					has_policy_flag = slight_quantity_ship_focus
+					has_policy_flag = quantity_ship_focus
+				}
+				OR = {
+					has_policy_flag = slight_quality_ship_focus
+					has_policy_flag = balanced_ship_focus
+					has_policy_flag = slight_quantity_ship_focus
+				}
+			}
+		}
+		policy_flags = {
+			balanced_ship_focus
+		}
+	}
+	option = {
+		name = "slight_quantity_ship_focus"
+
+		prerequisites = {
+			"tech_fleet_focus"
+		}
+		
+		valid = {
+			OR = {
+				has_policy_flag = quantity_ship_focus
+				has_policy_flag = slight_quantity_ship_focus
+				has_policy_flag = balanced_ship_focus
+			}
+		}
+		policy_flags = {
+			slight_quantity_ship_focus
+		}
+		modifier = {
+			navy_size_mult = 0.1
+			ship_upkeep_mult = -0.1
+			spaceport_ship_build_cost_mult = -0.1
+			planet_ship_build_speed_mult = 0.1
+			ship_fire_rate_mult = -0.05
+			ship_hitpoints_mult = -0.05
+		}
+	}
+	option = {
+		name = "quantity_ship_focus"
+		
+		valid = {
+			OR = {
+				has_policy_flag = quantity_ship_focus
+				has_policy_flag = slight_quantity_ship_focus
+				has_policy_flag = extreme_quantity_ship_focus
+			}
+		}
+		prerequisites = {
+			"tech_imperial_reforms"
+		}
+		policy_flags = {
+			quantity_ship_focus
+		}
+		modifier = {
+			navy_size_mult = 0.3
+			ship_upkeep_mult = -0.3
+			spaceport_ship_build_cost_mult = -0.25
+			planet_ship_build_speed_mult = 0.25
+			ship_fire_rate_mult = -0.2
+			ship_hitpoints_mult = -0.2
+		}
+	}
+}
+
+

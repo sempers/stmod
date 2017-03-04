@@ -1,0 +1,227 @@
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_SOCIAL_DEMOCRACY
+
+    trigger = {
+        has_government = social_democracy
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_COMMUNIST_DICTATORSHIP
+
+    trigger = {
+        has_government = communist_dictatorship
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_XENO_FASCISM
+
+    trigger = {
+        has_government = xeno_fascism
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_MIL_CARTEL
+
+    trigger = {
+        has_government = mil_cartel
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_ECO_DEMOCRACY
+
+    trigger = {
+        has_government = eco_democracy
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_COMMUNISM
+
+    trigger = {
+        has_government = communism
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_COALESCENCE
+
+    trigger = {
+        has_government = coalescence
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_CASTE
+
+    trigger = {
+        has_government = caste
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_CAP_AUTOCRACY
+
+    trigger = {
+        has_government = cap_autocracy
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_POLICE_STATE
+
+    trigger = {
+        has_government = police_state
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_PAR_MONARCHY
+
+    trigger = {
+        has_government = par_monarchy
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_SOC_DEM
+
+    trigger = {
+        has_government = soc_dem
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_XEN_ARISTOCRACY
+
+    trigger = {
+        has_government = xen_aristocracy
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_ARISTOCRACY
+
+    trigger = {
+        has_government = aristocracy
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_FEUD_KINGDOM
+
+    trigger = {
+        has_government = feud_kingdom
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_DRONE_COA
+
+    trigger = {
+        has_government = drone_coa
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_IMPERIALIST_STATE
+
+    trigger = {
+        has_government = imperialist_state
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_XENO_CONGRESS
+
+    trigger = {
+        has_government = xeno_congress
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+
+part = {
+    location = 1
+    localization = START_SCREEN_PART_TWO_DEC_BUREAUCRACY
+
+    trigger = {
+        has_government = dec_bureaucracy
+        NOT = { has_country_flag = custom_start_screen }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

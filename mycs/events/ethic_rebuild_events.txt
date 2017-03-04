@@ -1,0 +1,29 @@
+
+namespace = action
+
+country_event = {
+id =  ethic_government_rebuild.1
+hide_window = yes
+fire_only_once = yes
+
+immediate = {
+set_global_flag = ethic_government_rebuild_playing
+}
+
+}
+
+namespace = increase_planetsize
+
+planet_event = {
+	id = increase_planetsize.1
+	hide_window = yes
+	is_triggered_only = yes
+	location = ROOT 
+
+	immediate = { 
+		add_energy = -3000
+		add_minerals = -3000
+		change_planet_size = 1
+		set_planet_flag = planet_size_increased	
+	}
+}

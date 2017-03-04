@@ -1,0 +1,123 @@
+	
+#energy
+OR = {
+	has_trait = "trait_thrifty"
+	has_trait = "trait_efficient"
+	has_trait = "trait_super_efficient"
+}
+
+#minerals
+OR = {
+	has_trait = "trait_industrious"
+	has_trait = "trait_collector"
+	has_trait = "trait_golddigger"
+}
+
+#food
+OR = {
+	has_trait = "trait_agrarian"
+	has_trait = "trait_harvester"
+	has_trait = "trait_extreme_harvester"
+}	
+
+#charisma
+OR = {
+	has_trait = "trait_charismatic"
+	has_trait = "trait_sociable"
+}
+
+#uncharisma
+OR = {
+	has_trait = "trait_repugnant"
+	has_trait = "trait_repulsive"
+	has_trait = "trait_obnoxious"
+}
+
+#ethic_shift
+OR = {
+	has_trait = "trait_deviants"
+	has_trait = "trait_free_spirits"
+	has_trait = "trait_iconoclastic"
+}
+
+#unshift
+OR = {
+	has_trait = "trait_conformists"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+map_slave_soldiers = { 
+	#type = hegemon
+
+	aggressiveness = 1.3
+	trade_willingness = 1.0
+	bravery = 1.1
+	
+	military_spending = 1.2
+	colony_spending = 1.0
+	
+	federation_acceptance = -30
+	nap_acceptance = -10
+	defensive_pact_acceptance = -10
+	migration_pact_acceptance = 10
+	
+	advanced_start_chance = 50
+	
+	weapon_preferences = weapon_type_kinetic
+	armor_ratio = 0.7
+	shields_ratio = 0.3
+	
+	threat_modifier = 1.1
+	threat_others_modifier = 1.0
+	friction_modifier = 1.0
+	
+	behaviour = {
+		conqueror = yes
+		subjugator = yes
+		liberator = yes
+		opportunist = yes
+		slaver = yes
+		uplifter = yes
+		purger = no
+		infiltrator = no
+		dominator = yes
+		robot_exploiter = yes
+		robot_liberator = no
+		#migrator = yes
+		propagator = no
+		ideologue = no
+		multispecies = yes
+	}
+	
+	allow = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = "trait_decadent" # maybe not?
+		NOT = { has_election_type = democratic }	
+		NOT = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"				
+		}
+		OR = {
+			has_ethic = "ethic_spiritualist"
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ethic = "ethic_militarist"
+			has_ethic = "ethic_fanatic_militarist"
+			has_ethic = "ethic_xenophile"
+			has_ethic = "ethic_fanatic_xenophile"				
+		}
+	}
+	
+	weight_modifier = {
+		weight = 10		
+	}
+}

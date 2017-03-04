@@ -1,0 +1,49 @@
+component_set = {
+	key = "TITAN_COMBAT_COMPUTER_1"
+	
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TITAN_COMBAT_COMPUTER_2"
+	
+	icon = "GFX_ship_part_computer_defensive_basic"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TITAN_COMBAT_COMPUTER_3"
+	
+	icon = "GFX_ship_part_computer_defensive_advanced"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TITAN_COMBAT_COMPUTER_4"
+	
+	icon = "GFX_ship_part_computer_sentient"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TITAN_COMBAT_COMPUTER_PRECOG"
+	
+	icon = "GFX_ship_part_computer_pregoc"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SUPERLASER"
+	
+	icon = "GFX_ship_part_energy_lance_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "titan_reactor"
+	
+	show_in_designer = no
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+}

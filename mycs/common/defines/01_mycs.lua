@@ -1,0 +1,47 @@
+NDefines.NPop.GROWTH_BASE = 100
+NDefines.NPop.FALLEN_EMPIRE_GROWTH_REQ_MULT = 50
+NDefines.NPop.FOOD_SUSTAINED = 1	-- Amount of food each pop require	
+NDefines.NPop.FOOD_SURPLUS_BASE_GROWTH = 0.8	-- Amount to grow if there is a surplus
+NDefines.NPop.FOOD_SURPLUS_EXTRA_GROWTH = 0.05
+NDefines.NPop.GROWTH_INCREASE_PER_POP = 1.5
+NDefines.NPop.GROWTH_INCREASE_FACTOR = 1.08
+NDefines.NPop.HAPPINESS_PROGRESS_BAR_GREEN = 0.7
+NDefines.NPop.HAPPINESS_PROGRESS_BAR_YELLOW = 0.2
+
+NDefines.NShip.WARP_INTERSTELLAR_TRAVEL_SPEED  = 0.05
+NDefines.NShip.HYPERDRIVE_INTERSTELLAR_TRAVEL_SPEED = 0.15
+NDefines.NShip.ENERGY_MAINTENANCE_MUL				= 0.005
+NDefines.NShip.MINERAL_MAINTENANCE_MUL				= 0.005
+NDefines.NShip.FLEET_BASE_FORMATION_SCALE = 5
+
+NDefines.NGameplay.NEBULA_TRAVEL_SPEED_PENALTY = 0.50
+NDefines.NGameplay.FTL_RANGE_JUMPDRIVE = 120
+NDefines.NGameplay.DEBRIS_ANALYZED_AREA_POINTS	= 10	-- Points * Level given for each component analyzed
+NDefines.NGameplay.DEBRIS_RESEARCH_TIME	= 30	-- How many days it takes to analyze 1 debris.
+
+NDefines.NEconomy.EXPANSION_COST_BASE = 20.0
+NDefines.NEconomy.WORMHOLE_STATION_MAINTENANCE = 0.5
+NDefines.NEconomy.OUTPOST_STATION_INFLUENCE_MAINTENANCE = 0.25
+NDefines.NEconomy.COLONY_MAINTENANCE_COST = 10
+NDefines.NEconomy.START_ENERGY = 200
+NDefines.NEconomy.START_MINERALS = 400
+NDefines.NEconomy.SPACEPORT_UPGRADE_COSTS	= { 200.0, 400.0, 600.0, 800.0, 1000.0 }
+NDefines.NEconomy.RESETTLEMENT_COST_RESOURCES = { "influence", "energy" }
+NDefines.NEconomy.RESETTLEMENT_COST_AMOUNTS	= { 25, 250 }
+
+
+
+NDefines.NGraphics.TRAILS_ALPHA_FADE = 2.0
+NDefines.NGraphics.TRAILS_BASE_WIDTH = 0.75
+NDefines.NGraphics.TRAILS_MISSILE_BASE_WIDTH = 2
+NDefines.NGraphics.STRIKE_CRAFT_TRAIL_FADE_RATE	= 8
+
+NDefines.NGraphics.SHIP_RANDOM_HEIGHT_OFFSET = 25.0
+NDefines.NGraphics.DEAD_SHIP_DRAG = 1.0
+
+--ethic rebuild
+NDefines.NGameplay.ETHOS_MAX_POINTS		= 3
+NDefines.NGameplay.LEADER_SKILL_CAP		= 20
+NDefines.NGameplay.GARRISON_SIZE_MULT = 0.5
+NDefines.NGameplay.POP_FACTION_SUPPORT_INCREASE = 0.1 --0.10
+NDefines.NGameplay.POP_FACTION_SUPPORT_INCREASE_CHANCE = 0.2 --0.15

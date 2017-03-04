@@ -1,0 +1,177 @@
+ship_section_template = {
+	key = "dreadnought_flagship_bow"
+	ship_size = dreadnought_flagship
+	fits_on_slot = bow
+	entity = "dreadnought_flagship_hull_entity"
+	icon = "GFX_ship_part_core_bow"
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		slot_size = extra_large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		slot_size = extra_large
+		slot_type = weapon
+		locatorname = "large_gun_02"
+	}
+	
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	
+	cost = 0
+}
+
+ship_section_template = {
+	key = "dreadnought_flagship_mid_1"
+	ship_size = dreadnought_flagship
+	fits_on_slot = mid1
+	entity = "dreadnought_flagship_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_03_l"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_03_r"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_03"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_04_l"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_04_r"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_05"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_05_l"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_06"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_05_r"
+	}
+	
+	large_utility_slots = 5
+	aux_utility_slots = 1
+	
+	cost = 0
+}
+
+ship_section_template = {
+	key = "dreadnought_flagship_mid_2"
+	ship_size = dreadnought_flagship
+	fits_on_slot = mid2
+	entity = "dreadnought_flagship_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		slot_size = large
+		slot_type = strike_craft
+		locatorname = "large_gun_06"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		slot_size = large
+		slot_type = strike_craft
+		locatorname = "large_gun_06"
+	}
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		slot_size = large
+		slot_type = strike_craft
+		locatorname = "large_gun_06"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		slot_size = large
+		slot_type = strike_craft
+		locatorname = "large_gun_06"
+	}
+
+	large_utility_slots = 5
+	aux_utility_slots = 1
+	
+	cost = 0
+}
+
+ship_section_template = {
+	key = "dreadnought_flagship_stern"
+	ship_size = dreadnought_flagship
+	fits_on_slot = stern
+	entity = "dreadnought_flagship_hull_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_07_l"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_07_r"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "small_gun_08"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "small_gun_09"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "small_gun_10"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "large_gun_06"
+	}
+	
+	large_utility_slots = 5
+	aux_utility_slots = 1
+	
+	cost = 0
+}

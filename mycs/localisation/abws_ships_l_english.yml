@@ -1,0 +1,151 @@
+﻿l_english:
+ # ###################################
+ # New weapons
+ # ###################################
+
+ MASS_ACCELERATOR:0 "Mass Accelerator"
+ MASS_ACCELERATOR_DESC:0 "Ancient technology originally meant to transport resources through intra-galatic space, these scaled down mass accelerators hurl massive projectiles at a fraction of the speed of light producing devastating results if it hits."
+ 
+ ANTIMATTER_LANCE:0 "Antimatter Lance"
+ ANTIMATTER_LANCE_DESC:0 "An unholy merger of Extra-Dimensional technology and particle lance technology, this weapon projects a dimensional bending stream of power, that separates matter and antimatter, at near lightspeed, annihilating everything in its path. The only flaw is the massive amount of energy required and the long charge time."
+ 
+ CRYSTAL_MISSILE:0 "Crystal Missile"
+ CRYSTAL_MISSILE_DESC:0 "By growing crystals into missiles on a much larger scale, speeds previously thought impossible was achieved. The crystals react with shields explosively and cuts through armour easily, shredding through shields and armour with ease. Only if it wasn't so expensive it would replace the current missile technology."
+
+ # ###################################
+ # New Components
+ # ###################################
+
+ COMBAT_COMPUTER_CARRIER:0 "Carrier AI"
+ COMBAT_COMPUTER_CARRIER_DESC:1 "A basic Carrier AI to hold carriers at maximum range out of reach of enemy combat ships."
+
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+ 
+ ####################################
+ # Hull Sizes
+ ####################################
+ gunboat:0 "Gunboat"
+ gunboat_plural:0 "Gunboats"
+ 
+ fireship:0 "Fireship"
+ fireship_plural:0 "Fireships"
+ 
+ frigate:0 "Frigate"
+ frigate_plural:0 "Frigates"
+ 
+ privateer:0 "Privateer"
+ privateer_plural:0 "Privateers"
+ 
+ 
+ ####################################
+ # Gunboat
+ ####################################
+ GUNBOAT_S2:0 "Standard Core"
+ GUNBOAT_M1:0 "Assault Core"
+ 
+ ####################################
+ # Fireship
+ ####################################
+ FIRESHIP_L1M1:0 "Bombardment Core"
+ FIRESHIP_M3:0 "Punisher Core"
+ FIRESHIP_L1:0 "Siege Core" 
+ 
+ ####################################
+ # Frigate
+ ####################################
+ FRIGATE_L1S1:0 "Battle Core"
+ FRIGATE_M2S1:0 "Combat Core"
+ FRIGATE_S5:0 "Defender Core"
+ 
+ ####################################
+ # Privateer
+ ####################################
+ PRIVATEER_BOW_L1S2:0 "Buccaneer Bow"
+ PRIVATEER_BOW_M3:0 "Raider Bow"
+ PRIVATEER_BOW_S6:0 "Shredder Bow"
+ PRIVATEER_BOW_L2:0 "Corsair Bow"
+ PRIVATEER_STERN_M2:0 "Skimmer Bulwark"
+ PRIVATEER_STERN_S4:0 "Guard Bulwark"
+ PRIVATEER_STERN_S2:0 "Barebones Bulwark"
+
+ ################DREADNOUGHT################
+ 
+ #written by: Tobori
+
+##################
+### Technology ###
+##################
+
+ tech_dreadnought_flagship:0 "Titan Construction"
+ tech_dreadnought_flagship_desc:0 "Allows construction of Titans"
+ TECH_UNLOCK_DREADNOUGHT_FLAGSHIP_TITLE:0 "§HUnlocks Ship Size:§! Titan"
+ TECH_UNLOCK_DREADNOUGHT_FLAGSHIP_DESC:0 "§HTitans§!\nThe culmination of decades of research. The Titan is the most massive ship we are capable of constructing inside of our shipyards."
+
+########################
+### Combat Computers ###
+########################
+
+ DREADNOUGHT_FLAGSHIP_COMBAT_COMPUTER_1:0 "Basic Combat Computer (Titan)"
+ DREADNOUGHT_FLAGSHIP_COMBAT_COMPUTER_2:0 "Intermediate Combat Computer (Titan)"
+ DREADNOUGHT_FLAGSHIP_COMBAT_COMPUTER_3:0 "Advanced Combat Computer (Titan)"
+ DREADNOUGHT_FLAGSHIP_COMBAT_COMPUTER_4:0 "Sentient Combat Computer (Titan)"
+ DREADNOUGHT_FLAGSHIP_COMBAT_COMPUTER_PRECOG:0 "Precognitive Interface (Titan)"
+
+################
+### Behavior ###
+################
+
+ DREADNOUGHT_FLAGSHIP_DEFAULT_BEHAVIOR_DESC:0 "§HHeavy Bombardment:§! The ship flies towards its maintarget until it reaches optimal bombardment range(40)."
+
+#############
+### Ships ###
+#############
+
+ dreadnought_flagship:0 "Dreadnought"
+ dreadnought_flagship_plural:0 "Dreadnoughtss"
+
+#####################
+### Ship Sections ###
+#####################
+
+ dreadnought_flagship_bow:0 "Bow"
+ dreadnought_flagship_mid_1:0 "Core"
+ dreadnought_flagship_mid_2:0 "Carrier"
+ dreadnought_flagship_stern:0 "Stern"
+ 
+ 
+ titan:0 "Titan"
+ titan_plural:0 "Titans"
+ TITAN_BOW:0 "Titan Bow"
+ TITAN_MID:0 "Titan Core"
+ TITAN_STERN:0 "Titan Stern"
+
+#Titan techs and pre-reqs
+
+ TECH_UNLOCK_TITAN_CONSTRUCTION_TITLE:0 "§HUnlocks Ship Type:§! Titan"
+ TECH_UNLOCK_TITAN_CONSTRUCTION_DESC:0 "§HTitan§!\nThe culmination of decades of research. The Titan is the most massive ship we are capable of constructing inside of our shipyards."
+
+ TITAN_COMBAT_COMPUTER_1:0 "Basic Combat Computer (Titan)"
+ TITAN_COMBAT_COMPUTER_2:0 "Intermediate Combat Computer (Titan)"
+ TITAN_COMBAT_COMPUTER_3:0 "Advanced Combat Computer (Titan)"
+ TITAN_COMBAT_COMPUTER_4:0 "Sentient Combat Computer (Titan)"
+ TITAN_COMBAT_COMPUTER_PRECOG:0 "Precognitive Interface (Titan)"
+ SUPERLASER:0 "Titan Laser"
+ TITAN_LASER_DESC:0 "Titan Laser is the ultimate weapon of Titan class warships, however, using it against anything smaller then Titan sized ships is a waste."
+ TITAN_REACTOR:0 "Integrated Powerplant"
+ 
+ 
+ #STRONGER BOMBARDMENT############ 
+ ####################################
+ # Misc
+ ####################################
+ GROUND_SUPPORT_STANCE_SOFT_BASE_DESC:2 "§H'Light'§! stance will cause $DAMAGE|Y$ damage to the planet's fortifications each day, multiplied by the supporting fleet's size.\n\n§HIt also has the following effects:§!\n- Defending armies will not regenerate health\n- §Y5%§! chance each month that a Pop is killed\n"
+ GROUND_SUPPORT_STANCE_LIMITED_BASE_DESC:2 "§H'Limited'§! stance will cause $DAMAGE|Y$ damage to the planet's fortifications each day, multiplied by the supporting fleet's size.\n\n§HIt also has the following effects:§!\n- Defending armies will not regenerate health\n- Pops are unable to work\n- §Y20%§! chance each month that a Pop is killed\n- §Y25%§! chance each month that a building is ruined\n"
+ GROUND_SUPPORT_STANCE_FULL_BASE_DESC:2 "§H'Full'§! stance will cause $DAMAGE|Y$ damage to the planet's fortifications each day, multiplied by the supporting fleet's size.\n\n§HIt also has the following effects:§!\n- Defending armies will not regenerate health\n- Pops are unable to work\n- §Y50%§! chance each month that a Pop is killed\n- §Y50%§! chance each month that a building is ruined\n- §Y15%§! chance each month that a tile blocker is created\n"

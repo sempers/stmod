@@ -1,0 +1,244 @@
+@energy_purifying = 10000
+@time_purifying = 7300
+
+@energy_inhabitable = 12000
+@time_inhabitable = 7300
+
+
+#Purifying Terraforming Links
+#############################
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_continental"
+
+	duration = @time_purifying
+	energy = @energy_purifying
+	
+	resources = {
+		sr_oxygen = 10
+		sr_nitrogen = 10
+		sr_water = 20
+	}
+
+	condition = { AND = {
+		has_technology = "tech_stimulated_solar_winds"
+	}}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_ocean"
+
+	duration = @time_purifying
+	energy = @energy_purifying
+	
+	resources = {
+		sr_oxygen = 10
+		sr_nitrogen = 10
+		sr_water = 30
+	}
+
+	condition = { AND = {
+		has_technology = "tech_stimulated_solar_winds"
+	}}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_tropical"
+
+	duration = @time_purifying
+	energy = @energy_purifying
+	
+	resources = {
+		sr_oxygen = 10
+		sr_nitrogen = 10
+		sr_water = 15
+	}
+	
+	condition = { AND = {
+		has_technology = "tech_stimulated_solar_winds"
+	}}
+}
+
+
+#Uninhabitable Terraforming Links
+#################################
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_arid"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+	resources = {
+		sr_oxygen = 15
+		sr_nitrogen = 15
+		sr_water = 10
+		sr_carbon_dioxide = 5
+	}
+
+	condition = {
+		AND = {
+		has_technology = "tech_artificial_atmosphere"
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_desert"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+	resources = {
+		sr_oxygen = 15
+		sr_nitrogen = 15
+		sr_water = 5
+		sr_carbon_dioxide = 5
+	}
+
+	condition = { AND = {
+		has_technology = "tech_artificial_atmosphere"
+	}}
+}
+
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_alpine"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+	resources = {
+		sr_oxygen = 15
+		sr_nitrogen = 15
+		sr_water = 10
+		sr_carbon_dioxide = 5
+		sr_carbon = 5
+	}
+
+	condition = { AND = {
+		has_technology = "tech_artificial_atmosphere"
+	}}
+}
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_arctic"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+	resources = {
+		sr_oxygen = 15
+		sr_nitrogen = 15
+		sr_carbon_dioxide = 5
+		sr_water = 10
+	}
+
+	condition = { AND = {
+		has_technology = "tech_artificial_atmosphere"
+	}}
+}
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_tundra"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+	resources = {
+		sr_oxygen = 15
+		sr_nitrogen = 15
+		sr_carbon_dioxide = 5
+		sr_water = 15
+	}
+
+	condition = { AND = {
+		has_technology = "tech_artificial_atmosphere"
+	}}
+}
+
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_arctic"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+	resources = {
+		sr_oxygen = 10
+		sr_nitrogen = 10
+		sr_carbon_dioxide = 10
+	}
+
+	condition = { AND = {
+		has_technology = "tech_extreme_greenhouse"
+	}}
+}
+
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_tundra"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+	resources = {
+		sr_oxygen = 10
+		sr_nitrogen = 10
+		sr_carbon_dioxide = 15
+	}
+	
+	condition = { AND = {
+		has_technology = "tech_extreme_greenhouse"
+	}}
+}
+
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_desert"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+	resources = {
+		sr_oxygen = 10
+		sr_nitrogen = 10
+		sr_water = 5
+		sr_carbon = 5
+	}
+
+	condition = { AND = {
+		has_technology = "tech_high_alt_solarprotection"
+	}}
+}
+
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_arid"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+	resources = {
+		sr_oxygen = 10
+		sr_nitrogen = 10
+		sr_water = 10
+		sr_carbon = 5
+	}
+
+	condition = { AND = {
+		has_technology = "tech_high_alt_solarprotection"
+	}}
+}

@@ -1,0 +1,43 @@
+AGRICULTURE:	|  			hunters -> agrarian -> harvester -> extreme_harvester
+
+INDUSTRY:		|  sloth ->	lazy -> industrious -> collector -> golddigger
+
+ENERGY:			|  			wasteful -> thrifty -> efficient -> super_efficient
+
+SCIENCE:		|   inept -> dim -> intelligent -> genius								#multitasking -> /dev/null
+				    incompetent_physicists -> natural_physicists
+					incompetent_sociologists -> natural_sociologists
+					incompetent_engineers -> natural_engineers
+
+LEADER EXP: 	|  slow_learners -> quick_learners
+
+BREEDING:		|  very_slow_breeders -> slow_breeders -> rapid_breeders
+
+ADAPTABILITY:	|  nonadaptive -> adaptive -> extremely_adaptive
+
+AGE:			|  ephemeral -> fleeting -> enduring -> venerable -> immortal
+
+ETHIC SHIFT:	|  iconoclastic -> free_spirits -> deviants -> conformists -> brainwashed
+
+PHYSICAL: 		|  very_weak -> weak -> strong -> very_strong
+
+OFFENSE MORALE:	|  craven -> valiant					    							#weak_willed -> craven  born_warriors -> valiant
+
+DEFENSE MORALE: |  delicate -> resilient -> zealous_defenders
+
+SOCIABILITY:	|  solitary -> communal													#introvert / extravert
+
+ATTITUDE:		|  aggressive -- friendly												#sociable -> friendly
+
+TRAVELSOMENESS: |  isolationist -> sedentary -> nomadic -> expansionist
+
+APPEARANCE:		|  obnoxious -> repugnant -> charismatic -> attractive					#others_happiness
+
+HAPPINESS:		|  obsessed -> content -- hedonist										#happiness
+
+ECOLOGY:		|  cyborg -- green
+
+MISC:			|  thermosynthetic, decadent, violent, scavenger    					#doulophage -> dev/null
+
+
+

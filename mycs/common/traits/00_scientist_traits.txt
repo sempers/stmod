@@ -1,0 +1,544 @@
+###########
+# Balance #
+###########
+#effects on research traits
+@categorybonus = 0.10
+
+####################
+# Scientist Traits #
+####################
+
+leader_trait_careful = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_careful.dds"
+	modifier = {
+		ship_anomaly_fail_risk = -0.10
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	opposites = { "leader_trait_carefree" }
+	
+	ai_categories = {
+		survey
+	}
+	
+	ai_weight = {
+		weight = 50
+	}
+}
+
+leader_trait_meticulous = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_meticulous.dds"
+	modifier = {
+		ship_anomaly_generation_chance_mult = 0.10
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	opposites = { "leader_trait_carefree" }
+	
+	ai_categories = {
+		survey
+	}
+	
+	ai_weight = {
+		weight = 50
+	}
+}
+
+leader_trait_spark_of_genius = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_spark_of_genius.dds"
+	modifier = {
+		all_technology_research_speed = 0.10
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# increased chance to discover rare techs (weighted in tech-script)
+	
+	ai_categories = {
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 200
+	}
+
+	opposites = { "leader_trait_Stupid" }
+}
+
+leader_trait_Stupid = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_stupid.dds"
+	modifier = {
+		all_technology_research_speed = -0.05
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# increased chance to discover rare techs (weighted in tech-script)
+	
+	ai_categories = {
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 200
+	}
+	
+	opposites = { "leader_trait_spark_of_genius" }
+}
+
+leader_trait_carefree = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_carefree.dds"
+	modifier = {
+		ship_anomaly_research_speed_mult = 0.35
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	opposites = { "leader_trait_careful" "leader_trait_meticulous" }
+	ai_categories = {
+		survey
+	}
+	
+	ai_weight = {
+		weight = 50
+	}
+
+	opposites = { "leader_trait_careful_sci" }
+}
+
+leader_trait_careful_sci = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_careful_sci.dds"
+	modifier = {
+		ship_anomaly_research_speed_mult = -0.35
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	opposites = { "leader_trait_careful" "leader_trait_meticulous" }
+	ai_categories = {
+		survey
+	}
+	
+	ai_weight = {
+		weight = 50
+	}
+
+	opposites = { "leader_trait_carefree" }
+}
+
+leader_trait_roamer = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_roamer.dds"
+	modifier = {
+		science_ship_survey_speed = 0.25
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	
+	ai_categories = {
+		survey
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_archaeologist = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_archaeologist.dds"
+	custom_tooltip = leader_trait_archaeologist_tooltip
+		self_modifier = {
+		
+			vultaum_asteroid_category_research_speed_mult = 0.5
+			vultaum_asteroid_category_research_fail_risk_add = -0.25
+			vultaum_gasgiant_category_research_speed_mult = 0.5
+			vultaum_gasgiant_category_research_fail_risk_add = -0.25
+			vultaum_uninhabitable_category_research_speed_mult = 0.5
+			vultaum_uninhabitable_category_research_fail_risk_add = -0.25
+			vultaum_habitable_category_research_speed_mult = 0.5
+			vultaum_habitable_category_research_fail_risk_add = -0.25
+			yuht_asteroid_category_research_speed_mult = 0.5
+			yuht_asteroid_category_research_fail_risk_add = -0.25
+			yuht_gasgiant_category_research_speed_mult = 0.5
+			yuht_gasgiant_category_research_fail_risk_add = -0.25
+			yuht_uninhabitable_category_research_speed_mult = 0.5
+			yuht_uninhabitable_category_research_fail_risk_add = -0.25
+			yuht_habitable_category_research_speed_mult = 0.5
+			yuht_habitable_category_research_fail_risk_add = -0.25
+			league_asteroid_category_research_speed_mult = 0.5
+			league_asteroid_category_research_fail_risk_add = -0.25
+			league_gasgiant_category_research_speed_mult = 0.5
+			league_gasgiant_category_research_fail_risk_add = -0.25
+			league_uninhabitable_category_research_speed_mult = 0.5
+			league_uninhabitable_category_research_fail_risk_add = -0.25
+			league_habitable_category_research_speed_mult = 0.5
+			league_habitable_category_research_fail_risk_add = -0.25
+			irassian_asteroid_category_research_speed_mult = 0.5
+			irassian_asteroid_category_research_fail_risk_add = -0.25
+			irassian_gasgiant_category_research_speed_mult = 0.5
+			irassian_gasgiant_category_research_fail_risk_add = -0.25
+			irassian_uninhabitable_category_research_speed_mult = 0.5
+			irassian_uninhabitable_category_research_fail_risk_add = -0.25
+			irassian_habitable_category_research_speed_mult = 0.5
+			irassian_habitable_category_research_fail_risk_add = -0.25
+			cybrex_asteroid_category_research_speed_mult = 0.5
+			cybrex_gasgiant_category_research_fail_risk_add = -0.25
+			cybrex_uninhabitable_category_research_speed_mult = 0.5
+			cybrex_habitable_category_research_fail_risk_add = -0.25
+		}
+	leader_trait = yes
+	leader_class = { scientist }
+	
+	ai_categories = {
+		survey
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_paranoid = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		all_technology_research_speed = -0.05
+		ship_anomaly_research_speed_mult = -0.10
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
+}
+
+leader_trait_maniacal = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_maniacal.dds"
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# increased chance to discover risky techs (weighted in tech-script)
+	
+	ai_categories = {
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 110
+	}
+}
+
+leader_trait_custom_AI_assistant = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_custom_AI_assistant.dds"
+	modifier = {
+		all_technology_research_speed = 0.05
+		science_ship_survey_speed = 0.1
+		ship_anomaly_research_speed_mult = 0.15
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	prerequisites = { tech_self_aware_logic }
+	opposites = { "leader_trait_sentient_AI_assistant" }
+	
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_sentient_AI_assistant = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_sentient_AI_assistant.dds"
+	modifier = {
+		all_technology_research_speed = 0.1
+		science_ship_survey_speed = 0.2
+		ship_anomaly_research_speed_mult = 0.3
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	prerequisites = { tech_sentient_ai }
+	opposites = { "leader_trait_custom_AI_assistant" }
+	
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 300
+	}
+}
+
+leader_trait_expertise_materials = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_materials.dds"
+	modifier = {
+		category_materials_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# higher chance to generate techs in category materials (done in tech-script)
+	
+	ai_categories = {
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_rocketry = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_rocketry.dds"
+	modifier = {
+		category_rocketry_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# higher chance to generate techs in category rocketry (done in tech-script)
+	
+	ai_categories = {
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_voidcraft = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+	modifier = {
+		category_voidcraft_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# higher chance to generate techs in category zero-g structures (done in tech-script)
+	
+	ai_categories = {
+		engineering
+		physics
+	}
+	
+	ai_weight = {
+		weight = 70
+	}
+}
+
+leader_trait_expertise_industry = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+	modifier = {
+		category_industry_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# higher chance to generate techs in category planetary structures (done in tech-script)
+	
+	ai_categories = {
+		engineering
+		physics
+	}
+	
+	ai_weight = {
+		weight = 70
+	}
+}
+
+leader_trait_expertise_field_manipulation = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_field_manipulation.dds"
+	modifier = {
+		category_field_manipulation_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# higher chance to generate techs in category field manipulation (done in tech-script)
+	
+	ai_categories = {
+		physics
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_particles = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_particles.dds"
+	modifier = {
+		category_particles_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	
+	ai_categories = {
+		physics
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_computing = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_computing.dds"
+	modifier = {
+		category_computing_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# higher chance to generate techs in category computing (done in tech-script)
+	
+	ai_categories = {
+		physics
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_psionics = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_psionics.dds"
+	modifier = {
+		category_psionics_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	prerequisites = { tech_psionic_theory }
+	# higher chance to generate techs in category psionics (done in tech-script)
+	
+	ai_categories = {
+		society
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_new_worlds = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_new_worlds.dds"
+	modifier = {
+		category_new_worlds_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# higher chance to generate techs in category environmental systems (done in tech-script)
+	
+	ai_categories = {
+		society
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_statecraft = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_statecraft.dds"
+	modifier = {
+		category_statecraft_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# higher chance to generate techs in category financial theory (done in tech-script)
+	
+	ai_categories = {
+		society
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_biology = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_biology.dds"
+	modifier = {
+		category_biology_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# higher chance to generate techs in category biology (done in tech-script)
+	
+	ai_categories = {
+		society
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_expertise_military_theory = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_military_theory.dds"
+	modifier = {
+		category_military_theory_research_speed_mult = @categorybonus
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	# higher chance to generate techs in category military organization (done in tech-script)
+	
+	ai_categories = {
+		society
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}

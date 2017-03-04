@@ -1,0 +1,21 @@
+﻿l_english:
+
+titan:0 "Titan"
+titan_plural:0 "Titans"
+TITAN_BOW:0 "Titan Bow"
+TITAN_MID:0 "Titan Core"
+TITAN_STERN:0 "Titan Stern"
+
+#Titan techs and pre-reqs
+
+TECH_UNLOCK_TITAN_CONSTRUCTION_TITLE:0 "§HUnlocks Ship Type:§! Titan"
+TECH_UNLOCK_TITAN_CONSTRUCTION_DESC:0 "§HTitan§!\nThe culmination of decades of research. The Titan is the most massive ship we are capable of constructing inside of our shipyards."
+
+TITAN_COMBAT_COMPUTER_1:0 "Basic Combat Computer (Titan)"
+TITAN_COMBAT_COMPUTER_2:0 "Intermediate Combat Computer (Titan)"
+TITAN_COMBAT_COMPUTER_3:0 "Advanced Combat Computer (Titan)"
+TITAN_COMBAT_COMPUTER_4:0 "Sentient Combat Computer (Titan)"
+TITAN_COMBAT_COMPUTER_PRECOG:0 "Precognitive Interface (Titan)"
+SUPERLASER:0 "Titan Laser"
+SUPERLASER_DESC:0 "Titan Laser is the ultimate weapon of Titan class warships, however, using it against anything smaller then Titan sized ships is a waste."
+TITAN_REACTOR:0 "Integrated Powerplant"
