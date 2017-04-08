@@ -117,10 +117,4 @@ country_edict = {
 	prerequisites = {
 		"tech_colliseum"
 	}
-}	
-	
-	
-	
-	
-	
-	
+}
